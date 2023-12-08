@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        form {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 400px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+        }
+
+        body {
+            background-image: url("https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-craig-adderley-1563356.jpg&fm=jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            color: #ce1212;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            padding-left: 3.8%;
+            overflow-x: auto;
+        }
+
+        input[type="radio"] {
+            margin-right: 25px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .log {
+            text-align: center;
+            color: white;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        button:hover,
+        .btn:hover {
+            background-color: #ce1212;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/register" method="POST">
+        <h1>Registration Form</h1>
+        <div>
+            <label for="Name">First Name:</label>
+            <input id="firstname" type="text" name="firstname" placeholder="Enter Your First Name">
+        </div>
+        <div>
+            <label for="Name">Last Name:</label>
+            <input id="lastname" type="text" name="lastname" placeholder="Enter Your Last Name">
+        </div>
+        <div>
+            <label for="Email Id">Email Id:</label>
+            <input id="email" type="email" name="email" placeholder="Enter Your Email Id">
+        </div>
+        <div>
+            <label for="Mobile">Mobile Number:</label>
+            <input id="mobile" type="number" name="mobile" placeholder="Enter Your Mobile Number">
+        </div>
+        <div>
+            <label for="create password">Create Password:</label>
+            <input id="password" type="password" name="password" placeholder="Enter Create Password">
+        </div>
+        <div>
+            <label for="confirm password">Confirm Password:</label>
+            <input id="confirm_password" type="password" name="confirmpassword" placeholder="Enter Confirm Password">
+        </div>
+        <div>
+            <fieldset>
+                <legend>Sex:</legend>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+                <label><input type="radio" name="gender" value="other">Other</label>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox">I agree to the terms and conditions
+        </div>
+        <br>
+        <div>
+            <input class="btn" type="submit" value="Register">
+        </div>
+        <div>
+            <br>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <script>
+        const myForm = document.getElementById('myForm');
+
+        // Add an event listener for the reset button
+        myForm.addEventListener('reset', function (event) {
+            // Prevent the default reset behavior
+            event.preventDefault();
+
+            // Clear the input fields in the form
+            myForm.reset();
+        });
+    </script>
+    <script>
+        alert("Registration Form!");
+    </script>
+</body>
+
+</html>

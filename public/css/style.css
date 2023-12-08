@@ -1,0 +1,131 @@
+h1 {
+    font-size: 2.1rem;
+    line-height: 1.4rem;
+    color: rgb(17, 216, 57);
+    margin-top: 20px;
+    color: #eef9ee;
+    background-color: #298824;
+    padding-left: 3.8%;
+    overflow-x: auto;
+    padding: 20px 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    /* Green */
+    border: 10px;
+    color: rgb(21, 214, 14);
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+}
+
+h2 {
+    color: #fff;
+    background-color: #298824;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    padding-left: 3.8%;
+    overflow-x: auto;
+}
+
+h3 {
+    color: #18d253;
+}
+
+.main {
+    position: absolute;
+    left: 30px;
+    position: absolute;
+    right: 30px;
+}
+
+h6 {
+    background-color: #008396;
+    margin-top: 1px;
+    padding: 20px;
+    border: 40px;
+    max-width: 711px;
+    font-size: 1.00em;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.lastscroll {
+    display: grid;
+    background-color: rgb(10, 214, 10);
+    grid-row-gap: 20px;
+    grid-column-gap: 45px;
+    grid-template-columns: auto auto auto;
+    padding: 33px 80px 33px 80px;
+    grid-template-rows: 20px 20px 20px 20px 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 20px;
+    color: #E91E63;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/* .img {
+    /* padding: 50px; */
+    /* /* background-color: green; */
+    /* transition: transform .2s; */
+    /* Animation */
+    /* width: 200px;
+    height: 200px;
+    margin: 0 auto; */
+/* } */
+.img:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+.copyright{
+    background-color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+/* .navbar-brand{
+    background-color: #18d253;
+}
+
+#navbarSupportedContent{
+    background-color: #18d253;
+} */
+
+
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+@media (max-width: 575.98px) {
+    .carousel-item img {
+        max-height: 200px; /* Adjust the image height */
+        object-fit: cover; /* Ensure the image covers the entire slide */
+    }
+}
+
+/* Media query for screens between 577px and 991.98px (e.g., tablets) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .carousel-item img {
+        max-height: 300px; /* Adjust the image height */
+        object-fit: cover; /* Ensure the image covers the entire slide */
+    }
+}
+
+/* Media query for screens larger than 992px (e.g., desktops) */
+@media (min-width: 992px) {
+    .carousel-item img {
+        max-height: 400px; /* Adjust the image height */
+        object-fit: cover; /* Ensure the image covers the entire slide */
+    }
+}
+
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+/* @media (max-width: 575.98px) {
+    .carousel-caption p {
+        font-size: 14px; /* Adjust the font size */
+     /*   margin-bottom: 10px; /* Adjust the margin-bottom */
+    /*}} 
+    
+
